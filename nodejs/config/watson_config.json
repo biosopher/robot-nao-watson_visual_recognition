@@ -1,0 +1,6 @@
+{
+    "visual_recognition" : {
+        // REQUIRED when running locally
+        "api_key": "WATSON VISUAL RECOGNITION API KEY"
+    }
+}

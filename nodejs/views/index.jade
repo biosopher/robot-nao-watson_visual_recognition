@@ -1,0 +1,56 @@
+doctype html
+html
+    head
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')
+        meta(charset="utf-8")
+        link(href="stylesheets/robot_nao.css" type="text/css" rel="stylesheet")
+        link(href="stylesheets/ladda/ladda-themeless.min.css" type="text/css" rel="stylesheet")
+        link(href="stylesheets/bootstrap.min.css" type="text/css" rel="stylesheet")
+
+        title Watson Visual Recognition
+    body.body_background
+        div#top_locked_div
+            div#heading Watson sees...
+            img#settings_image(src="../images/settings.png")
+            div.clearBoth
+        #main_wrapper
+            .no_photo.text-center
+              h4 No Photo Available
+
+        button#requestPhotoButton
+            #request_photo_button_enabled
+             strong Request a photo
+            #request_photo_button_loading.hidden
+
+        <!-- Reusable template for adding new photo analysis -->
+        div#analysis_template.analysis_wrapper.hidden.text-center
+            div.photo_wrapper
+                img.photo.img-rounded
+            div.vr_analysis
+                .face_results
+                  h4 Faces
+                .poker_heading
+                  h4 Poker
+                  .poker_results
+                .classifier_heading
+                  h4 Classifier
+                  .classifier_results
+                .similar_images_heading
+                  h4 Similar Products
+                  .similar_images
+
+        <!-- Reusable template for displaying classifier results -->
+        div#analysis_result.analysis_result.hidden
+            div#analysis_result_description.analysis_result_description
+            div#analysis_result_confidence.analysis_result_confidence
+            div.clearBoth
+
+        <!-- Reusable template for displaying similar image results -->
+        div#similar_image_result.similar_image_result.hidden
+            img#similar_image_result_image.similar_image_result_image
+            div#similar_image_result_confidence.similar_image_result_confidence
+            div.clearBoth
+
+    script(src="javascript/jquery/jquery-2.1.0.min.js" type="text/javascript")<!-- jQuery-- >
+    script(src="javascript/photo_utils.js" type="text/javascript")<!-- Watson Team JS-- >
+    script(src="javascript/bootstrap.min.js" type="text/javascript")<!-- Watson Team JS-- >

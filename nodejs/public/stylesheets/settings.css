@@ -1,0 +1,132 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: HelveticaNeue, Helvetica, Arial, sans-serif;
+    margin-bottom:100px;
+}
+
+body a {
+    text-decoration: none;
+}
+body div {
+    box-sizing: border-box;
+}
+.body_background{
+    background-color: #323232;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#top_locked_div {
+    background-color: #000;
+    position:fixed;
+    top:0;
+    width:100%;
+    padding:5px;
+    z-index:100;
+    height: 60px;
+}
+#page_title {
+    font-size: 20px;
+    color: #fff;
+    margin-top: 10px;
+}
+#back_button {
+    margin-left: 10px;
+    margin-right: 50px;
+    margin-top: 5px;
+    width: 40px;
+    float: left;
+}
+#main_wrapper {
+    color: #fff;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 75px;
+}
+.heading {
+    font-weight: bold;
+    margin-top: 10px;
+}
+button {
+    border: 1px;
+    padding: 5px 10px;
+    color: #000;
+    font-size: 14px;
+}
+#usage_tips {
+    color: #0074D9;
+}
+#last_communication {
+    color:#fff;
+    padding-left: 10px;
+    font-weight: normal;
+}
+#robot_stats {
+    color:#fff;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+.robot_stats_link_error {
+    color: red;
+}
+#robot_stats_hints {
+    margin-left:5px;
+    color: #929292;
+}
+#submit_button{
+    margin-top: 15px;
+    margin-bottom: 20px;
+    border-color: black;
+    background-color: #311941;
+}
+.team_div {
+    margin-top: 150px;
+    margin-left: 10px;
+    font-weight:bold;
+}
+.team_name {
+    padding-left: 10px;
+    font-size: 12px;
+}
+.team_icon {
+    width: 125px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+/***  Common CSS ***/
+button:focus {
+    outline:0;
+}
+a:link, a:visited {
+    color: #888888;
+    text-decoration: underline;
+}
+.hidden {
+    display: none;
+}
+.visible {
+    display: block;
+}
+.clearBoth {
+    clear:both;
+}
+@media (min-width: 1200px) {
+    .seven-cols .col-md-1,
+    .seven-cols .col-sm-1,
+    .seven-cols .col-lg-1 {
+        width: 14.285714285714285714285714285714%;
+        *width: 14.285714285714285714285714285714%;
+    }
+}
+/* 14% = 100% (full-width row) divided by 7 */
+
+img{
+    max-width: 100%;
+}
