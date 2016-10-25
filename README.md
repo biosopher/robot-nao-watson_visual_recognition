@@ -9,5 +9,5 @@ The [./python](python directory) contains a module that pings a NodeJS server fo
 ### NodeJS Package
 The [./nodejs](nodejs directory) provides a UI that shows the results when a photos taken by the NAO robot are classified by the [Watson Visual Recognition Service](https://www.ibm.com/watson/developercloud/visual-recognition.html).  
 
-
+[![](wiki/media/app_screen.jpg)](https://www.ibm.com/watson/developercloud/visual-recognition.html)
 
